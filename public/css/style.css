@@ -1,0 +1,729 @@
+/* ========================================================
+   Pentru inima mea ❤️ - Romantic & Premium Dark Luxury Theme
+   ======================================================== */
+
+:root {
+  --bg-deep: #090812;
+  --bg-card: rgba(22, 17, 39, 0.75);
+  --bg-card-hover: rgba(33, 25, 59, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.04);
+  --border-glass: rgba(244, 114, 182, 0.22);
+  --border-glow: rgba(244, 114, 182, 0.5);
+
+  /* Romantic Color Palette */
+  --pink-pastel: #fbcfe8;
+  --pink-soft: #f472b6;
+  --pink-vibrant: #ec4899;
+  --purple-soft: #c084fc;
+  --purple-deep: #7c3aed;
+  --white: #ffffff;
+  --text-primary: #fdf2f8;
+  --text-secondary: #e2d9f3;
+  --text-muted: #a79bc2;
+  
+  --shadow-glow: 0 0 25px rgba(244, 114, 182, 0.35);
+  --shadow-heart: 0 10px 40px rgba(236, 72, 153, 0.45);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+/* Background Animated Canvas */
+#particles-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* App Container */
+.app-container {
+  position: relative;
+  z-index: 1;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Top Navigation / Status Header */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-full);
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--pink-pastel);
+  letter-spacing: 0.5px;
+}
+
+.brand-badge .heart-icon {
+  animation: pulse-mini 2s infinite ease-in-out;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.icon-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.icon-btn:hover, .icon-btn:active {
+  background: rgba(244, 114, 182, 0.2);
+  transform: scale(1.06);
+}
+
+/* Hero Section */
+.hero-card {
+  background: linear-gradient(145deg, rgba(34, 23, 56, 0.85), rgba(18, 14, 32, 0.85));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(244, 114, 182, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.site-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #ffffff 10%, #fbcfe8 60%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.romantic-message {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--pink-soft);
+}
+
+.romantic-message p {
+  margin-bottom: 0.85rem;
+}
+
+.romantic-message p:last-child {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--pink-pastel);
+  text-align: center;
+}
+
+/* ========================================================
+   MAIN ALERT BUTTON - Big & Glowing
+   ======================================================== */
+.alert-action-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0 1rem 0;
+  position: relative;
+}
+
+.main-alert-btn {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: 84px;
+  background: linear-gradient(135deg, #f43f5e 0%, #ec4899 50%, #8b5cf6 100%);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: var(--radius-full);
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 10px 40px rgba(236, 72, 153, 0.5), 0 0 25px rgba(244, 63, 94, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.main-alert-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 15px 50px rgba(236, 72, 153, 0.65), 0 0 35px rgba(244, 63, 94, 0.5);
+}
+
+.main-alert-btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Breathing Aura around main button */
+.pulse-aura {
+  position: absolute;
+  width: 100%;
+  max-width: 375px;
+  height: 98px;
+  border-radius: var(--radius-full);
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.4) 0%, rgba(139, 92, 246, 0) 70%);
+  animation: breathing 2.8s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main-alert-btn .heart-glow {
+  font-size: 1.6rem;
+  animation: heartbeat 1.4s infinite ease-in-out;
+  display: inline-block;
+}
+
+.btn-caption {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+/* Live Acknowledgment Banner (Shows live response from boyfriend) */
+.live-status-card {
+  display: none;
+  background: linear-gradient(135deg, rgba(38, 20, 60, 0.95), rgba(20, 15, 36, 0.95));
+  border: 1.5px solid var(--pink-soft);
+  box-shadow: var(--shadow-glow);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  animation: slideDown 0.4s ease-out;
+}
+
+.live-status-card.visible {
+  display: block;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--pink-pastel);
+  margin-bottom: 0.5rem;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: blink 1.5s infinite;
+}
+
+.status-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.ack-highlight {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(244, 114, 182, 0.12);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #10b981;
+  font-weight: 600;
+  color: #a7f3d0;
+}
+
+/* ========================================================
+   QUICK BUTTONS SECTION
+   ======================================================== */
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--pink-pastel);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.quick-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.quick-btn {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--text-primary);
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-align: left;
+}
+
+.quick-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--pink-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(244, 114, 182, 0.22);
+}
+
+.quick-btn:active {
+  transform: scale(0.98);
+}
+
+.quick-btn .btn-emoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.quick-btn .btn-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-btn .btn-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.quick-btn .btn-sub {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+/* Optional Note Input */
+.custom-note-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.custom-note-card summary {
+  font-size: 0.88rem;
+  color: var(--pink-pastel);
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.custom-note-card textarea {
+  width: 100%;
+  margin-top: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 70px;
+}
+
+.custom-note-card textarea:focus {
+  outline: none;
+  border-color: var(--pink-soft);
+  box-shadow: 0 0 10px rgba(244, 114, 182, 0.3);
+}
+
+/* ========================================================
+   SOOTHING WIDGETS (Breathing 4-7-8 & Calming Notes)
+   ======================================================== */
+.soothing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.widget-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.breathing-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breathing-orb {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.5) 0%, rgba(124, 58, 237, 0.2) 65%, transparent 75%);
+  border: 2px solid rgba(244, 114, 182, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--white);
+  box-shadow: 0 0 35px rgba(244, 114, 182, 0.3);
+  transition: all 4s ease-in-out;
+}
+
+.breathing-orb.inhale {
+  transform: scale(1.4);
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.8) 0%, rgba(192, 132, 252, 0.4) 70%, transparent 80%);
+  box-shadow: 0 0 50px rgba(244, 114, 182, 0.6);
+}
+
+.breathing-orb.hold {
+  transform: scale(1.4);
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.8) 0%, rgba(124, 58, 237, 0.4) 70%, transparent 80%);
+  box-shadow: 0 0 50px rgba(167, 139, 250, 0.6);
+}
+
+.breathing-orb.exhale {
+  transform: scale(0.9);
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.3) 0%, rgba(124, 58, 237, 0.1) 60%, transparent 70%);
+  box-shadow: 0 0 20px rgba(244, 114, 182, 0.2);
+}
+
+.breathing-ctrl-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass);
+  color: var(--pink-pastel);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.breathing-ctrl-btn:hover {
+  background: rgba(244, 114, 182, 0.2);
+}
+
+/* Love Notes Pill Generator */
+.love-note-box {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 0.75rem;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: var(--pink-pastel);
+  font-size: 0.95rem;
+  border-left: 3px solid var(--purple-soft);
+}
+
+.draw-note-btn {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-full);
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.35);
+  transition: var(--transition-fast);
+}
+
+.draw-note-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+}
+
+/* Direct Contact Shortcuts */
+.contact-shortcuts {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.contact-btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition-fast);
+}
+
+.contact-btn:hover {
+  background: rgba(244, 114, 182, 0.15);
+  border-color: var(--pink-soft);
+}
+
+/* ========================================================
+   MODALS & TOASTS
+   ======================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #1f1738, #130f24);
+  border: 1.5px solid var(--pink-soft);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), var(--shadow-glow);
+  transform: translateY(20px) scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0) scale(1);
+}
+
+.modal-emoji {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: pulse-mini 1.5s infinite;
+}
+
+.modal-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--pink-pastel);
+  margin-bottom: 0.6rem;
+}
+
+.modal-desc {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-primary {
+  flex: 1;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  border: none;
+  color: white;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+}
+
+/* Sent Toast / Banner */
+.confirmation-toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: linear-gradient(135deg, #1f1738, #150f29);
+  border: 1.5px solid var(--pink-soft);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), var(--shadow-glow);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 1000;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  max-width: 90%;
+  text-align: center;
+}
+
+.confirmation-toast.show {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ========================================================
+   KEYFRAME ANIMATIONS
+   ======================================================== */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.22); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  70% { transform: scale(1); }
+}
+
+@keyframes breathing {
+  0%, 100% { transform: scale(0.96); opacity: 0.45; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+}
+
+@keyframes pulse-mini {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.site-footer a {
+  color: var(--pink-soft);
+  text-decoration: none;
+}

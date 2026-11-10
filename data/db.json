@@ -1,0 +1,323 @@
+{
+  "alerts": [
+    {
+      "id": "alert_1794297752541_889899",
+      "type": "emergency",
+      "title": "❤️ AM NEVOIE DE TINE!",
+      "message": "Iubita ta te cheamă chiar acum. Are nevoie de tine!",
+      "note": "Te rog, am nevoie de tine acum!",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:02:32.541Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:02",
+      "timeOnly": "10:02",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    },
+    {
+      "id": "alert_1794297752881_9bcb51",
+      "type": "emergency",
+      "title": "AM NEVOIE DE TINE ❤️",
+      "message": "Iubita ta te cheamă chiar acum. Are nevoie de tine!",
+      "note": "",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:02:32.881Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:02",
+      "timeOnly": "10:02",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    },
+    {
+      "id": "alert_1794297759453_11ead4",
+      "type": "overthinking",
+      "title": "Am overthinking.",
+      "message": "Gândurile o copleșesc. Are nevoie de vorbele tale calde și de liniște.",
+      "note": "",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:02:39.453Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:02",
+      "timeOnly": "10:02",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    },
+    {
+      "id": "alert_1794297794893_e49464",
+      "type": "sick",
+      "title": "Nu mă simt bine.",
+      "message": "Nu se simte bine fizic sau emoțional. Are nevoie de grija ta.",
+      "note": "",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:03:14.893Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:03",
+      "timeOnly": "10:03",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    },
+    {
+      "id": "alert_1794297858480_47bf39",
+      "type": "emergency",
+      "title": "AM NEVOIE DE TINE ❤️",
+      "message": "Iubita ta te cheamă chiar acum. Are nevoie de tine!",
+      "note": "",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:04:18.480Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:04",
+      "timeOnly": "10:04",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    },
+    {
+      "id": "alert_1794297872139_0e895f",
+      "type": "emergency",
+      "title": "AM NEVOIE DE TINE ❤️",
+      "message": "Iubita ta te cheamă chiar acum. Are nevoie de tine!",
+      "note": "",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:04:32.139Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:04",
+      "timeOnly": "10:04",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    },
+    {
+      "id": "alert_1794297876388_ee220b",
+      "type": "talk",
+      "title": "Vreau să vorbesc cu tine.",
+      "message": "Are ceva pe suflet și vrea să discutați deschis, fără judecată.",
+      "note": "",
+      "urgency": "high",
+      "ip": "127.0.0.1",
+      "createdAt": "2026-11-10T08:04:36.388Z",
+      "timestampFormatted": "10 noiembrie 2026 la 10:04",
+      "timeOnly": "10:04",
+      "status": "pending",
+      "acknowledgedAt": null,
+      "replyMessage": null
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_1794297668563_20eadc",
+      "endpoint": "https://web.push.apple.com/QNUUqlmSbdtekToam5sFDvuAUGhmUBhzBrg-lmAxwjjisUpf6lUf0TQdBbPR2PDdNWdDNV9agFoEe8ZyxJEpfxcfrbpsZcIJPZWwlDFX0t6HWzgyuDzWaMdL_y9X4nuTgJVocKYyRNTawLgx6vFP27itAdeUTBoEQgG2ghoiJrU",
+      "keys": {
+        "p256dh": "BEaXslt75XbEuinyIxdspGCR92OXSeBJdl2frmToxh99Oy38gkh5xwwB4b07OeQzQa2Y8C3QpZM7LkjE1b5nOj4",
+        "auth": "cZQ3FSnQGfTfk7DJfX_1Hw"
+      },
+      "role": "boyfriend_iphone",
+      "deviceName": "iPhone-ul meu",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+      "createdAt": "2026-11-10T08:01:08.563Z",
+      "lastSuccess": "2026-11-10T08:04:36.580Z",
+      "failCount": 0
+    }
+  ],
+  "settings": {
+    "pin": "inima123",
+    "girlfriendName": "Inima Mea",
+    "boyfriendName": "Iubitul Tău",
+    "boyfriendPhone": "",
+    "whatsappNumber": "",
+    "telegramBotToken": "",
+    "telegramChatId": "",
+    "vapidKeys": {
+      "publicKey": "BDfmYnOdTcNk-yk1r4_tXiww8WteL_NrVI88RqtPGUH060dLpsH_Cb1KNQUncnzfI17uxiYe4hGDTgPbXyEZw9M",
+      "privateKey": "cROn_ZjcksxFKLJEJFK9B9cyByxGzmTaMso0dlBUcJg"
+    }
+  },
+  "logs": [
+    {
+      "id": "log_1794296714032",
+      "timestamp": "2026-11-10T07:45:14.032Z",
+      "level": "info",
+      "message": "Generated new VAPID keys for Web Push",
+      "details": null
+    },
+    {
+      "id": "log_1794296769284",
+      "timestamp": "2026-11-10T07:46:09.284Z",
+      "level": "warn",
+      "message": "Niciun dispozitiv abonat la notificări push pentru alertă: 🥺 AM OVERTHINKING",
+      "details": null
+    },
+    {
+      "id": "log_1794296769286",
+      "timestamp": "2026-11-10T07:46:09.286Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"🥺 AM OVERTHINKING\": 0/0 reușite",
+      "details": {
+        "total": 0,
+        "successCount": 0,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794296782944",
+      "timestamp": "2026-11-10T07:46:22.944Z",
+      "level": "info",
+      "message": "Alerta alert_1794296768985_9cf5b5 confirmată: \"?? Sunt aici, iubirea mea! Respira ad�nc, te iubesc!\"",
+      "details": null
+    },
+    {
+      "id": "log_1794296961509",
+      "timestamp": "2026-11-10T07:49:21.509Z",
+      "level": "warn",
+      "message": "Niciun dispozitiv abonat la notificări push pentru alertă: AM NEVOIE DE TINE ❤️",
+      "details": null
+    },
+    {
+      "id": "log_1794296961510",
+      "timestamp": "2026-11-10T07:49:21.511Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"AM NEVOIE DE TINE ❤️\": 0/0 reușite",
+      "details": {
+        "total": 0,
+        "successCount": 0,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297355729",
+      "timestamp": "2026-11-10T07:55:55.729Z",
+      "level": "info",
+      "message": "Abonament nou înregistrat: iPhone-ul meu (boyfriend_iphone)",
+      "details": null
+    },
+    {
+      "id": "log_1794297456713",
+      "timestamp": "2026-11-10T07:57:36.713Z",
+      "level": "error",
+      "message": "Eșec push către iPhone-ul meu: Received unexpected response code",
+      "details": null
+    },
+    {
+      "id": "log_1794297456717",
+      "timestamp": "2026-11-10T07:57:36.717Z",
+      "level": "warn",
+      "message": "Push trimis pentru alerta \"AM NEVOIE DE TINE ❤️\": 0/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 0,
+        "failCount": 1,
+        "errors": [
+          {
+            "endpoint": "https://web.push.apple.com/QNUUqlmSbdtekToam5...",
+            "deviceName": "iPhone-ul meu",
+            "status": 403,
+            "message": "Received unexpected response code"
+          }
+        ]
+      }
+    },
+    {
+      "id": "log_1794297535279",
+      "timestamp": "2026-11-10T07:58:55.279Z",
+      "level": "info",
+      "message": "Abonament nou înregistrat: iPhone-ul meu (boyfriend_iphone)",
+      "details": null
+    },
+    {
+      "id": "log_1794297668566",
+      "timestamp": "2026-11-10T08:01:08.566Z",
+      "level": "info",
+      "message": "Abonament nou înregistrat: iPhone-ul meu (boyfriend_iphone)",
+      "details": null
+    },
+    {
+      "id": "log_1794297755116",
+      "timestamp": "2026-11-10T08:02:35.116Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"❤️ AM NEVOIE DE TINE!\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297755119",
+      "timestamp": "2026-11-10T08:02:35.120Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"AM NEVOIE DE TINE ❤️\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297759664",
+      "timestamp": "2026-11-10T08:02:39.664Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"Am overthinking.\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297795495",
+      "timestamp": "2026-11-10T08:03:15.495Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"Nu mă simt bine.\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297859106",
+      "timestamp": "2026-11-10T08:04:19.106Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"AM NEVOIE DE TINE ❤️\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297872752",
+      "timestamp": "2026-11-10T08:04:32.752Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"AM NEVOIE DE TINE ❤️\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    },
+    {
+      "id": "log_1794297876587",
+      "timestamp": "2026-11-10T08:04:36.587Z",
+      "level": "info",
+      "message": "Push trimis pentru alerta \"Vreau să vorbesc cu tine.\": 1/1 reușite",
+      "details": {
+        "total": 1,
+        "successCount": 1,
+        "failCount": 0,
+        "errors": []
+      }
+    }
+  ]
+}

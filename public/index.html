@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <title>Pentru inima mea ❤️</title>
+
+  <!-- PWA & Mobile Meta -->
+  <meta name="theme-color" content="#090812">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Inima Mea">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Animated Romantic Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="app-container">
+    <!-- Top Bar Navigation -->
+    <header class="top-bar">
+      <div class="brand-badge">
+        <span class="heart-icon">💖</span>
+        <span>Pentru inima mea</span>
+      </div>
+      <div class="top-actions">
+        <a href="/guide.html" class="icon-btn" title="Ghid Notificări iPhone" aria-label="Ghid Notificări">
+          📱
+        </a>
+        <a href="/dashboard.html" class="icon-btn" title="Panou Admin" aria-label="Panou Admin">
+          🔒
+        </a>
+      </div>
+    </header>
+
+    <!-- Romantic Hero Card with Her Exact Message -->
+    <main>
+      <section class="hero-card">
+        <h1 class="site-title">
+          <span>Pentru inima mea</span>
+          <span style="display:inline-block; animation: heartbeat 1.5s infinite;">❤️</span>
+        </h1>
+
+        <div class="romantic-message">
+          <p>Iubirea mea, vreau să știi că nu trebuie să treci singură prin momentele grele.</p>
+          <p>Știu că uneori ai overthinking, că poate te gândești la prea multe lucruri și că uneori nu îmi spui când ceva te doare.</p>
+          <p>Dar vreau să înțelegi că eu vreau să știu. Nu mă deranjezi niciodată. Nu ești o povară pentru mine.</p>
+          <p>Nu trebuie să găsești cuvintele potrivite și nici să îmi explici totul.</p>
+          <p>Dacă ai nevoie de mine, chiar și la 3 dimineața, apasă butonul. Vreau să fiu acolo pentru tine.</p>
+          <p>Te iubesc și vreau să avem grijă unul de celălalt. ❤️</p>
+        </div>
+      </section>
+
+      <!-- Main Emergency Alert Button -->
+      <section class="alert-action-section">
+        <div class="pulse-aura"></div>
+        <button id="main-alert-btn" class="main-alert-btn" aria-label="Am nevoie de tine">
+          <span class="heart-glow">❤️</span>
+          <span>AM NEVOIE DE TINE</span>
+        </button>
+        <p class="btn-caption">Apasă oricând. Voi primi imediat o alertă pe telefon.</p>
+      </section>
+
+      <!-- Live Acknowledgment Card (Updates in real-time when boyfriend responds!) -->
+      <section id="live-status-card" class="live-status-card">
+        <div class="status-header">
+          <span class="live-dot"></span>
+          <span>Stare alertă în timp real</span>
+        </div>
+        <div id="live-status-msg" class="status-body"></div>
+        <div id="live-ack-box" class="ack-highlight" style="display: none;"></div>
+      </section>
+
+      <!-- Optional Extra Thought / Note -->
+      <details class="custom-note-card">
+        <summary>
+          <span>✍️ Vrei să adaugi câteva cuvinte? (opțional)</span>
+        </summary>
+        <textarea id="girlfriend-note" placeholder="Scrie orice ai pe suflet... nu judec, doar ascult și te iubesc."></textarea>
+      </details>
+
+      <!-- Quick Action Buttons Grid -->
+      <section style="margin-top: 1rem;">
+        <h2 class="section-title">
+          <span>⚡ Butoane Rapide</span>
+        </h2>
+        <div class="quick-buttons-grid">
+          <button class="quick-btn" data-type="overthinking">
+            <span class="btn-emoji">🥺</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Am overthinking.</span>
+              <span class="btn-sub">Gândurile mele aleargă prea repede...</span>
+            </div>
+          </button>
+
+          <button class="quick-btn" data-type="sad">
+            <span class="btn-emoji">💔</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Sunt tristă.</span>
+              <span class="btn-sub">Am o apăsare pe suflet...</span>
+            </div>
+          </button>
+
+          <button class="quick-btn" data-type="hug">
+            <span class="btn-emoji">🫂</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Am nevoie de o îmbrățișare.</span>
+              <span class="btn-sub">Vreau să mă simt în brațele tale.</span>
+            </div>
+          </button>
+
+          <button class="quick-btn" data-type="miss">
+            <span class="btn-emoji">❤️</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Mi-e dor de tine.</span>
+              <span class="btn-sub">Inima mea te caută chiar acum.</span>
+            </div>
+          </button>
+
+          <button class="quick-btn" data-type="sleep">
+            <span class="btn-emoji">🌙</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Nu pot să dorm.</span>
+              <span class="btn-sub">E noapte și mă simt singură.</span>
+            </div>
+          </button>
+
+          <button class="quick-btn" data-type="sick">
+            <span class="btn-emoji">😔</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Nu mă simt bine.</span>
+              <span class="btn-sub">Am nevoie de puțină grijă și alint.</span>
+            </div>
+          </button>
+
+          <button class="quick-btn" data-type="talk">
+            <span class="btn-emoji">💌</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Vreau să vorbesc cu tine.</span>
+              <span class="btn-sub">Când ai un minut liber, scrie-mi sau sună-mă.</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Soothing Interactive Zone (Breathing 4-7-8 & Calming Truths) -->
+      <section class="soothing-section" style="margin-top: 1.5rem;">
+        <h2 class="section-title">
+          <span>🌿 Pentru când te simți copleșită</span>
+        </h2>
+
+        <!-- 4-7-8 Breathing Guide -->
+        <div class="widget-card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--pink-pastel);">Respiră cu mine (4-7-8)</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Dacă simți că pulsul sau gândurile o iau razna, concentrează-te pe cerc.
+          </p>
+          <div class="breathing-box">
+            <div id="breathing-orb" class="breathing-orb">
+              <span id="breathing-label">Apasă pentru a începe</span>
+            </div>
+            <button id="breathing-toggle-btn" class="breathing-ctrl-btn">Începe respirația (4-7-8)</button>
+          </div>
+        </div>
+
+        <!-- Calming Love Notes -->
+        <div class="widget-card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--pink-pastel);">Răvaș de dragoste & liniștire</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Când te simți nesigură sau singură, trage un gând sincer de la mine:
+          </p>
+          <div id="love-note-text" class="love-note-box">
+            „Nu ești o povară pentru mine niciodată. Te iubesc din tot sufletul. ❤️”
+          </div>
+          <button id="draw-note-btn" class="draw-note-btn">Trage alt răvaș ✨</button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>Creat cu toată dragostea din lume, doar pentru tine. ❤️</p>
+        <p style="margin-top: 0.4rem; font-size: 0.75rem;">
+          <a href="/guide.html">Ghid notificări iPhone</a> • <a href="/dashboard.html">Panou de control</a>
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Accidental Click Prevention Confirmation Modal -->
+  <div id="confirmation-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div id="modal-emoji" class="modal-emoji">❤️</div>
+      <h3 id="modal-title" class="modal-title">Trimiți alerta?</h3>
+      <p id="modal-desc" class="modal-desc">
+        Voi primi instant o notificare pe iPhone cu semnalul tău!
+      </p>
+      <div class="modal-actions">
+        <button id="btn-cancel-send" class="btn-secondary">Renunță</button>
+        <button id="btn-confirm-send" class="btn-primary">Da, trimite semnalul! ❤️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Banner -->
+  <div id="confirmation-toast" class="confirmation-toast">
+    <span>💖</span>
+    <span id="toast-text">Am primit semnalul tău, iubirea mea. Sunt aici. ❤️</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/push-client.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ghid Configurare iPhone - Pentru inima mea ❤️</title>
+
+  <!-- PWA & Mobile Meta -->
+  <meta name="theme-color" content="#090812">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      color: white;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 0.95rem;
+      margin-right: 0.6rem;
+    }
+
+    .step-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--pink-pastel);
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .step-body {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .step-tip {
+      background: rgba(244, 114, 182, 0.1);
+      border-left: 3px solid var(--pink-soft);
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .ios-box {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin-top: 0.85rem;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .warning-box {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: #fef3c7;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <div class="brand-badge">
+        <span>📱 Configurare iPhone Push</span>
+      </div>
+      <div class="top-actions">
+        <a href="/" class="icon-btn" title="Pagina Iubitei">❤️</a>
+        <a href="/dashboard.html" class="icon-btn" title="Panou Admin">🔒</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero-card" style="margin-bottom: 1.5rem;">
+        <h1 style="font-size: 1.5rem; color: var(--pink-pastel); margin-bottom: 0.5rem;">
+          Cum configurezi iPhone-ul pentru alertare maximă
+        </h1>
+        <p style="font-size: 0.92rem; color: var(--text-secondary);">
+          Ghid complet pas cu pas pentru ca iPhone-ul tău să primească notificările push cu prioritate maximă, inclusiv pe ecranul blocat și noaptea.
+        </p>
+      </div>
+
+      <!-- Honest Technical Notice Regarding iOS Boundaries -->
+      <div class="warning-box">
+        <strong style="color: #fbbf24; font-size: 1rem;">⚠️ Notă sinceră despre limitările Apple iOS:</strong>
+        <p style="margin-top: 0.4rem; line-height: 1.5;">
+          Nicio pagină web sau aplicație PWA nu are dreptul la nivel de sistem să anuleze comutatorul fizic de Silent (butonul lateral) sau să vibreze continuu ore în șir fără oprire. 
+          Totuși, prin <strong>Apple Web Push (introdus în iOS 16.4+)</strong>, bannere persistente și excepții în modul <strong>Focus</strong>, obții <em>cea mai puternică și sigură alertare tehnic posibilă pe iPhone</em>.
+        </p>
+      </div>
+
+      <!-- PASUL 1 -->
+      <section class="step-card">
+        <div class="step-title">
+          <span class="step-number">1</span>
+          <span>Instalează PWA pe ecranul principal</span>
+        </div>
+        <div class="step-body">
+          <p>Apple permite notificări Web Push pe iPhone <strong>doar dacă aplicația este adăugată pe ecranul principal</strong> din Safari (iOS 16.4 sau mai nou).</p>
+          <div class="ios-box">
+            1. Deschide această pagină (sau panoul <code>/dashboard.html</code>) în <strong>Safari</strong>.<br>
+            2. Apasă butonul <strong>Share</strong> (pătratul cu săgeată în sus ⬆️ din bara de jos).<br>
+            3. Derulează în jos și alege <strong>„Adaugă pe ecranul principal” (Add to Home Screen)</strong>.<br>
+            4. Apasă <strong>Adaugă</strong> în colțul din dreapta sus.
+          </div>
+          <div class="step-tip">
+            💡 <strong>Sfat:</strong> Icoana cu inimioară va apărea acum exact ca o aplicație descărcată din App Store!
+          </div>
+        </div>
+      </section>
+
+      <!-- PASUL 2 -->
+      <section class="step-card">
+        <div class="step-title">
+          <span class="step-number">2</span>
+          <span>Deschide aplicația și acceptă notificările</span>
+        </div>
+        <div class="step-body">
+          <p>Deschide aplicația direct de pe ecranul principal al iPhone-ului.</p>
+          <div class="ios-box">
+            1. Intră în <strong>Panou Admin</strong> (icoana 🔒 din dreapta sus).<br>
+            2. Introdu codul PIN (implicit: <code>inima123</code>).<br>
+            3. În caseta de sus, apasă butonul: <strong>„🔔 Activează Notificările Push pe acest iPhone”</strong>.<br>
+            4. Când iOS afișează dialogul de sistem <em>„Inima Mea dorește să vă trimită notificări”</em>, apasă ferm <strong>Permite (Allow)</strong>.
+          </div>
+        </div>
+      </section>
+
+      <!-- PASUL 3 -->
+      <section class="step-card">
+        <div class="step-title">
+          <span class="step-number">3</span>
+          <span>Activează alertele pe ecranul blocat</span>
+        </div>
+        <div class="step-body">
+          <p>Asigură-te că alertele apar imediat pe ecran chiar dacă telefonul este blocat în toiul nopții.</p>
+          <div class="ios-box">
+            1. Deschide <strong>Configurări (Settings)</strong> pe iPhone.<br>
+            2. Mergi la <strong>Notificări (Notifications)</strong>.<br>
+            3. Caută aplicația <strong>Inima Mea</strong>.<br>
+            4. Bifează toate cele 3 locuri de afișare:<br>
+            &nbsp;&nbsp;✔️ <strong>Ecran blocat (Lock Screen)</strong><br>
+            &nbsp;&nbsp;✔️ <strong>Centru de notificări (Notification Center)</strong><br>
+            &nbsp;&nbsp;✔️ <strong>Bannere (Banners)</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- PASUL 4 -->
+      <section class="step-card">
+        <div class="step-title">
+          <span class="step-number">4</span>
+          <span>Activează Sunete, Insigne și Stil Banner Permanent</span>
+        </div>
+        <div class="step-body">
+          <p>Pentru a nu pierde nicio alertă:</p>
+          <div class="ios-box">
+            1. În același meniu din <strong>Configurări ➔ Notificări ➔ Inima Mea</strong>:<br>
+            2. Activează comutatorul <strong>Sunete (Sounds)</strong>.<br>
+            3. Activează <strong>Insigne (Badges)</strong>.<br>
+            4. La <strong>Stil banner</strong>, selectează <strong>Permanent (Persistent)</strong> în loc de Temporar.<br>
+            Astfel, bannerul va rămâne pe ecran până când apeși pe el!
+          </div>
+        </div>
+      </section>
+
+      <!-- PASUL 5 -->
+      <section class="step-card">
+        <div class="step-title">
+          <span class="step-number">5</span>
+          <span>Permite notificările în modul Focus / Noapte (Sleep)</span>
+        </div>
+        <div class="step-body">
+          <p>Dacă ai un mod „Nu deranjați” (Do Not Disturb) sau „Somn” (Sleep) activ la 3 dimineața, poți adăuga o excepție salvatoare:</p>
+          <div class="ios-box">
+            1. Mergi la <strong>Configurări ➔ Concentrare (Focus)</strong>.<br>
+            2. Selectează modul tău obișnuit de noapte (ex: <strong>Nu deranjați</strong> sau <strong>Somn</strong>).<br>
+            3. La secțiunea <strong>Permite notificări de la</strong>, apasă pe <strong>Aplicații (Apps)</strong>.<br>
+            4. Apasă <strong>Adaugă</strong> și selectează <strong>Inima Mea</strong>.<br>
+            5. Activează opțiunea <strong>Notificări urgente (Time Sensitive)</strong> dacă este disponibilă.
+          </div>
+          <div class="step-tip">
+            🌟 <strong>Bonus de siguranță:</strong> În Panoul Admin ➔ Setări, poți conecta și un cont <strong>Telegram Bot</strong> gratuit. Când ea apasă butonul, Telegram îți va trimite și el mesaj instant cu sunet, oferind dublă garanție!
+          </div>
+        </div>
+      </section>
+
+      <!-- Test Button Link -->
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="/dashboard.html" class="btn-primary" style="display: inline-block; text-decoration: none; padding: 0.9rem 2rem;">
+          Mergi la Panou și testează push-ul acum 🚀
+        </a>
+      </div>
+
+      <footer class="site-footer">
+        <p><a href="/">← Înapoi la pagina principală</a></p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
